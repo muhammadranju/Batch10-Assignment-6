@@ -11,6 +11,7 @@ const countNumber = id("countNumber"); // this div will show the countdown
 const sinnerOne = id("sinnerOne"); // this div will show the first sinner
 const sinnerTwo = id("sinnerTwo"); // this div will show the second sinner
 const alertSuccessMessage = id("alertSuccessMessage"); // this div will show the alert message
+const noImageSection = id("noImageSection"); // this div will show the no image message
 
 // this function will be called when the page is loaded
 async function main(url) {
@@ -99,6 +100,7 @@ async function showCategoryCards(name, btn) {
 // this function will show the image of the pet
 function showCardImage(image) {
   alertSuccessMessage.classList.remove("hidden");
+  noImageSection.classList.add("hidden");
   productCardImages.innerHTML += /*html*/ `
     <div class="border rounded-xl lg:w-full">
               <img src=${image} class="rounded-xl w-full h-32 object-cover" alt=""/>
