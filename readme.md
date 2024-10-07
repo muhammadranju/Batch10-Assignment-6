@@ -28,6 +28,7 @@
 - Live link to the deployed project:
 
   - https://batch10-assignment-6.netlify.app
+  - https://batch10-assignment-6.surge.sh
 
 ![Logo](./images/project-screenshot.png)
 
