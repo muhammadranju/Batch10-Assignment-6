@@ -64,13 +64,13 @@ async function showCategoryCards(name, btn) {
   productCards.innerHTML = "";
   sinnerTwo.classList.remove("hidden");
   productCards.classList.add("hidden");
-  productCardImages.classList.add("hidden");
+  cardContainerSection.classList.add("hidden");
   errorSection.classList.add("hidden");
   const data = await fetchData(`category/${name}`);
 
   if (data.data.length === 0) {
     productCards.classList.add("hidden");
-    productCardImages.classList.add("hidden");
+    cardContainerSection.classList.remove("hidden");
     errorSection.classList.remove("hidden");
     sinnerTwo.classList.add("hidden");
     return;
@@ -94,6 +94,7 @@ async function showCategoryCards(name, btn) {
     productCards.classList.remove("hidden");
     productCardImages.classList.remove("hidden");
     errorSection.classList.add("hidden");
+    cardContainerSection.classList.remove("hidden");
   }, 1500);
 }
 
