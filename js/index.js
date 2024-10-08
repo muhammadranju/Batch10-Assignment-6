@@ -144,9 +144,7 @@ async function showPatsDetails(id) {
 function countdown(button) {
   const counters = countNumber.innerText;
   let i = parseFloat(counters);
-
   adoptChallengeModal.showModal();
-
   const count = setInterval(() => {
     i--;
     countNumber.innerText = i;
